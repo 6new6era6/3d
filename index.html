@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="🎉 BLACK FRIDAY: Бесплатная доставка! Персональные 3D-фигурки по фото от $80. Реалистичное сходство, цветная печать на Bambu Lab H2D, ручная детализация. Идеальный подарок!">
+  <meta name="keywords" content="3d фигурки, 3d печать по фото, персональные фигурки, подарок на заказ, bambu lab, 3d модель человека, фигурка по фото">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://handmade3d.com/">
+  <meta property="og:title" content="🎉 BLACK FRIDAY: Free Shipping! | 3D фигурки по фото | Handmade 3D">
+  <meta property="og:description" content="Персональные 3D-фигурки от $80 с реалистичным сходством. Цветная печать на Bambu Lab H2D + ручная детализация. BLACK FRIDAY: Бесплатная доставка!">
+  <meta property="og:image" content="https://handmade3d.com/og-image.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://handmade3d.com/">
+  <meta property="twitter:title" content="🎉 BLACK FRIDAY: Free Shipping! | 3D фигурки по фото">
+  <meta property="twitter:description" content="Персональные 3D-фигурки от $80 с реалистичным сходством. Идеальный подарок!">
+  <meta property="twitter:image" content="https://handmade3d.com/og-image.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  
+  <title>🎉 BLACK FRIDAY: Free Shipping! | 3D фигурки по фото от $80 | Handmade 3D</title>
+  <link rel="stylesheet" href="styles/main.css">
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  
+  <!-- Facebook Pixel Code -->
+  <script>
+    // Отримуємо Pixel ID з URL параметра
+    const urlParams = new URLSearchParams(window.location.search);
+    const fbPixelId = urlParams.get('pixel') || 'YOUR_DEFAULT_PIXEL_ID';
+    
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    
+    if(fbPixelId && fbPixelId !== 'YOUR_DEFAULT_PIXEL_ID') {
+      fbq('init', fbPixelId);
+      fbq('track', 'PageView');
+      console.log('Facebook Pixel initialized with ID:', fbPixelId);
+    }
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=YOUR_DEFAULT_PIXEL_ID&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Facebook Pixel Code -->
+</head>
+<body>
+  <!-- Black Friday Banner -->
+  <div class="promo-banner" id="promo-banner">
+    <div class="promo-content">
+      <span class="promo-icon">🚚</span>
+      <span class="promo-text">
+        <strong>BLACK FRIDAY</strong> — Бесплатная доставка на все заказы! 
+        <span class="promo-timer">Осталось: <span id="timer-days">00</span>д <span id="timer-hours">00</span>ч <span id="timer-mins">00</span>м</span>
+      </span>
+      <button class="promo-cta" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+        Заказать сейчас →
+      </button>
+    </div>
+    <button class="promo-close" id="promo-close" aria-label="Закрыть">×</button>
+  </div>
+
+  <header class="hero" id="top" data-reveal>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <nav class="main-nav">
+        <a class="logo" href="#top">Handmade 3D</a>
+        <ul class="nav-links">
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#process">Процесс</a></li>
+          <li><a href="#calculator">Сроки</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+        </ul>
+        <button class="cta-primary cta-write" id="header-write-btn">Написать</button>
+      </nav>
+      <div class="hero-text">
+        <div class="black-friday-badge">
+          <span class="bf-text">BLACK FRIDAY</span>
+          <span class="bf-discount">🚚 FREE SHIPPING</span>
+        </div>
+        <h1>Персональная 3D-фигурка<br>по вашему фото</h1>
+        <p class="hero-lead">
+          Создаю реалистичные 3D-фигурки с максимальным сходством.<br>
+          Профессиональная печать на Bambu Lab H2D + ручная детализация.<br>
+          <strong class="price-highlight">🎁 Идеальный подарок! BLACK FRIDAY: бесплатная доставка на все заказы! 🚚</strong>
+        </p>
+        <ul class="hero-features">
+          <li>✓ Реалистичное сходство: лицо, волосы, одежда</li>
+          <li>✓ Размеры: от $80 за 10 см, 30+ см — индивидуально</li>
+          <li>✓ Цветная печать + ручная детализация</li>
+        </ul>
+        <div class="hero-actions">
+          <a class="cta-primary" href="#contact" data-tooltip="Перейти до форми замовлення">Заказать</a>
+          <a class="cta-secondary" href="#process" data-tooltip="Дізнатися про процес створення">Как это работает</a>
+        </div>
+        <div class="printer-badge">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v8H6z"/></svg>
+          <span>Bambu Lab H2D · Multi-Material & Colour</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="about" data-reveal>
+      <div class="container">
+        <h2 class="section-title">Ручная работа + точность 3D-печати</h2>
+        <p class="section-lead">Каждый заказ — совместный творческий процесс: вы присылаете фото, мы утверждаем 3D-модель, а затем я аккуратно подбираю цвета и довожу фигурку до идеала.</p>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v8H6z"/></svg>
+            </div>
+            <h3>Опыт печати</h3>
+            <p>Уже множество фигурок создано для друзей и клиентов. Bambu Lab H2D — профессиональное оборудование с многоцветной печатью.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15.5 7.5 2.3 2.3a1 1 0 0 0 1.4 0l2.1-2.1a1 1 0 0 0 0-1.4L19 4"/><path d="m21 2-9.6 9.6"/><circle cx="7.5" cy="15.5" r="5.5"/></svg>
+            </div>
+            <h3>Живая покраска</h3>
+            <p>Вручную дорабатываю детали, оттенки кожи, волос, одежды — чтобы фигурка максимально отражала личность.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+            <h3>Ответственность</h3>
+            <p>Форс-мажоры (отключение света, технические сбои) случаются. В таком случае я переделываю за свой счёт.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="process" data-reveal data-delay="0.1s">
+      <div class="container">
+        <h2 class="section-title">Процесс создания фигурки</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker">0</div>
+            <div class="timeline-content">
+              <h3>Очередь</h3>
+              <p>После заявки называю точные сроки с учётом текущей загрузки.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker">1</div>
+            <div class="timeline-content">
+              <h3>3D-модель по фото</h3>
+              <p><strong>1–3 дня:</strong> Создаю цифровую модель и согласовываю с вами все детали.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker">2</div>
+            <div class="timeline-content">
+              <h3>Покраска в системе принтера</h3>
+              <p><strong>1–2 дня:</strong> Подбираю цвета под специфику оборудования для реалистичного результата.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker">3</div>
+            <div class="timeline-content">
+              <h3>Печать</h3>
+              <p><strong>От ~5 часов:</strong> Зависит от размера. Чем больше фигурка — тем дольше процесс.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker">4</div>
+            <div class="timeline-content">
+              <h3>Сушка</h3>
+              <p><strong>1 день:</strong> Обязательный этап для стабилизации материала.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="sizes-block">
+          <h3>Доступные размеры</h3>
+          <div class="size-options">
+            <div class="size-card">
+              <span class="size-value">10 см</span>
+              <p>Компактная фигурка</p>
+            </div>
+            <div class="size-card">
+              <span class="size-value">20 см</span>
+              <p>Оптимальный баланс</p>
+            </div>
+            <div class="size-card">
+              <span class="size-value">30 см</span>
+              <p>Максимальный размер</p>
+            </div>
+          </div>
+          <p class="size-note"><strong>Важно:</strong> Фигурки выше 30 см печатаются из нескольких частей, требуют сборки и дополнительного времени.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="calculator" data-reveal data-delay="0.2s">
+      <div class="container">
+        <h2 class="section-title">Сроки и цены</h2>
+        <p class="section-lead">Прозрачное ценообразование от $80 за 10 см. BLACK FRIDAY: бесплатная доставка на все заказы!</p>
+        
+        <div class="calculator-widget">
+          <div class="size-selector">
+            <button class="size-btn active" data-size="10">10 см</button>
+            <button class="size-btn" data-size="15">15 см</button>
+            <button class="size-btn" data-size="20">20 см</button>
+            <button class="size-btn" data-size="25">25 см</button>
+            <button class="size-btn" data-size="30">Большой (30 см)</button>
+          </div>
+          
+          <!-- Custom Size Notice -->
+          <div class="custom-size-notice">
+            <span class="notice-icon">📏</span>
+            <span class="notice-text"><strong>30+ см</strong> — индивидуальные расценки. Напишите нам для уточнения!</span>
+          </div>
+          
+          <!-- Options -->
+          <div class="calculator-options">
+            <div class="option-group">
+              <label for="complexity-select">Сложность моделирования:</label>
+              <select id="complexity-select" class="calc-select">
+                <option value="simple">Простая поза, без аксессуаров</option>
+                <option value="medium" selected>Средняя (+$20)</option>
+                <option value="complex">Сложная поза, аксессуары (+$50)</option>
+              </select>
+            </div>
+            
+            <div class="option-group">
+              <label for="quality-select">Качество печати:</label>
+              <select id="quality-select" class="calc-select">
+                <option value="standard">Стандарт (0.2mm слои)</option>
+                <option value="high" selected>Высокое (+30%)</option>
+                <option value="premium">Премиум (+60%)</option>
+              </select>
+            </div>
+          </div>
+          
+          <!-- Pricing Block -->
+          <div class="pricing-block">
+            <div class="price-breakdown">
+              <div class="price-item">
+                <span class="price-label">💰 Итоговая цена:</span>
+                <span class="price-value final-price" id="final-price">$112</span>
+              </div>
+              <div class="price-item bf-shipping">
+                <span class="price-label">� BLACK FRIDAY:</span>
+                <span class="price-value shipping-free">Бесплатная доставка!</span>
+              </div>
+            </div>
+            <p class="pricing-note">💡 В цену входит: консультация, 3D-модель, согласование, печать, ручная детализация, упаковка</p>
+          </div>
+          
+          <div class="progress-bars" id="progress-container">
+            <div class="progress-item">
+              <div class="progress-label">
+                <span>Очередь</span>
+                <span class="progress-value" id="queue-hours">—</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" id="queue-fill"></div>
+              </div>
+            </div>
+            <div class="progress-item">
+              <div class="progress-label">
+                <span>3D-модель</span>
+                <span class="progress-value" id="model-hours">—</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" id="model-fill"></div>
+              </div>
+            </div>
+            <div class="progress-item">
+              <div class="progress-label">
+                <span>Покраска</span>
+                <span class="progress-value" id="paint-hours">—</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" id="paint-fill"></div>
+              </div>
+            </div>
+            <div class="progress-item">
+              <div class="progress-label">
+                <span>Печать</span>
+                <span class="progress-value" id="print-hours">—</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" id="print-fill"></div>
+              </div>
+            </div>
+            <div class="progress-item">
+              <div class="progress-label">
+                <span>Сушка</span>
+                <span class="progress-value" id="dry-hours">—</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" id="dry-fill"></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="total-time">
+            <span>Итого:</span>
+            <span class="total-value" id="total-hours">34.5 ч</span>
+          </div>
+          
+          <p class="calculator-note" id="calc-note"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="payment" data-reveal data-delay="0.25s">
+      <div class="container">
+        <h2 class="section-title">Оплата и гарантии</h2>
+        <div class="payment-content">
+          <div class="payment-card">
+            <h3>Предоплата 100%</h3>
+            <p>Принимаю только предоплату. Сейчас я сознательно держу цены почти по себестоимости — развиваю бренд и собираю портфолио.</p>
+          </div>
+          <div class="payment-card">
+            <h3>Форс-мажоры</h3>
+            <p>Если случится отключение электричества или технический сбой — переделаю за свой счёт. Моя цель — идеальный результат.</p>
+          </div>
+          <div class="payment-card">
+            <h3>Отчётность</h3>
+            <p>По запросу отправлю фото/видео этапов. Все договорённости фиксируем в переписке.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+          <section class="section" id="reviews" data-reveal data-delay="0.3s">
+      <div class="container">
+        <h2 class="section-title">Отзывы клиентов</h2>
+        <div class="reviews-slider">
+          <button class="slider-btn" id="prev-review" aria-label="Предыдущий отзыв" data-tooltip="Попередній відгук (←)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          <div class="review-card" id="review-content"></div>
+          <button class="slider-btn" id="next-review" aria-label="Следующий отзыв" data-tooltip="Наступний відгук (→)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+        </div>
+        <div class="slider-dots" id="slider-dots"></div>
+      </div>
+    </section>
+    </section>
+
+    <section class="section section-alt" id="contact" data-reveal data-delay="0.4s">
+      <div class="container">
+        <div class="bf-section-badge">
+          <span>🔥 BLACK FRIDAY -30%</span>
+        </div>
+        <h2 class="section-title">Напишите мне для заказа</h2>
+        <p class="section-lead">
+          <strong>🎉 BLACK FRIDAY: Скидка 30% на все заказы до конца ноября!</strong><br>
+          Форма необязательна — можете написать сразу! Укажите промокод <code class="promo-code">BLACKFRIDAY30</code> при заказе.
+        </p>
+        
+        <form id="contact-form" class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="full-name">Имя (необязательно)</label>
+              <input type="text" id="full-name" name="full-name" placeholder="Как к вам обращаться">
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Номер телефона (необязательно)</label>
+              <input type="tel" id="phone" name="phone" placeholder="+7... или +380...">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="size">Желаемый размер</label>
+              <select id="size" name="size">
+                <option value="" selected>Выберите размер (опционально)</option>
+                <option value="10">10 см</option>
+                <option value="15">15 см</option>
+                <option value="20">20 см</option>
+                <option value="25">25 см</option>
+                <option value="30">30 см</option>
+                <option value="30+">30+ см (индивидуально)</option>
+              </select>
+            </div>
+          </div>
+
+          <p class="form-note">📸 <strong>Фото жду в мессенджере!</strong> После того как напишете, пришлите фотографии там — так удобнее обсудить все детали.</p>
+
+          <div class="messenger-buttons">
+            <button type="button" id="telegram-button" class="cta-primary cta-large messenger-btn" data-tooltip="Відкрити Telegram чат">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+              Написать в Telegram
+            </button>
+            <button type="button" id="whatsapp-button" class="cta-primary cta-large messenger-btn whatsapp-btn" data-tooltip="Відкрити WhatsApp чат">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2h-3.5c-.85 0-1.5-.35-2-1l-3-3.5c-.5-.65-.5-1.35 0-2L14 11c.5-.65 1.15-1 2-1h3.5a2 2 0 0 1 2 2v3z"/><path d="M14.5 6.5c3 3 3 7.9 0 10.9"/><path d="M18.5 10.5c1 1 1 2.9 0 3.9"/></svg>
+              Написать в WhatsApp
+            </button>
+          </div>
+          <p class="form-status" id="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-nav">
+        <a href="#top">Главная</a>
+        <a href="#about">Обо мне</a>
+        <a href="#process">Процесс</a>
+        <a href="#calculator">Сроки</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contact">Контакты</a>
+      </div>
+      <p class="footer-copy">© 2025 Handmade 3D. Все права защищены.</p>
+      <a href="#top" class="footer-top">Вернуться наверх ↑</a>
+    </div>
+  </footer>
+
+  <!-- Floating Action Button -->
+  <div class="fab-container">
+    <button class="fab-button" id="fab-main" aria-label="Швидкі дії" data-tooltip="Швидкий зв'язок">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    </button>
+    <div class="fab-menu" id="fab-menu">
+      <a href="#" class="fab-option" id="fab-telegram" data-tooltip="Telegram">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+      </a>
+      <a href="#" class="fab-option" id="fab-whatsapp" data-tooltip="WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2h-3.5c-.85 0-1.5-.35-2-1l-3-3.5c-.5-.65-.5-1.35 0-2L14 11c.5-.65 1.15-1 2-1h3.5a2 2 0 0 1 2 2v3z"/><path d="M14.5 6.5c3 3 3 7.9 0 10.9"/><path d="M18.5 10.5c1 1 1 2.9 0 3.9"/></svg>
+      </a>
+      <a href="#contact" class="fab-option" data-tooltip="Форма замовлення">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <div id="messenger-modal" class="modal">
+    <div class="modal-content">
+      <h3>Выберите действие</h3>
+      <p>Открыть мессенджер прямо сейчас или скопировать ссылку?</p>
+      <div class="modal-actions">
+        <button class="cta-primary" id="modal-open">Открыть мессенджер</button>
+        <button class="cta-secondary" id="modal-copy">Скопировать ссылку</button>
+        <button class="cta-tertiary" id="modal-close">Отмена</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts/main.js" defer></script>
+  
+  <!-- Reading Progress Bar -->
+  <div class="reading-progress" id="reading-progress"></div>
+</body>
+</html>

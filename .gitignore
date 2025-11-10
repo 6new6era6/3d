@@ -1,0 +1,33 @@
+# Node modules (if using npm in future)
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment variables
+.env
+.env.local
+
+# Temporary files
+*.tmp
+tmp/
+temp/
+
+# Build output (if using build tools)
+dist/
+build/
+
+# Analytics IDs (optional - you might want to keep these in repo)
+# config.js
